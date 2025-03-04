@@ -14,4 +14,5 @@ func SetupRoutes(router *gin.Engine) {
 	})
 
 	router.GET("/products", controllers.GetProducts)
+	router.POST("/products", controllers.CreateProduct)
 }
